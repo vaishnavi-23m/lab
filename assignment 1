@@ -1,0 +1,131 @@
+check whether if given number is perfect or not
+
+n=int(input("enter a number:"))
+i=1
+sum=0
+while(i<n):
+  if(n%i==0):
+    sum=sum+i
+   i=i+1
+if(sum==n):
+print("%d is perfect number."%n)
+else:
+print("%d is not a perfect number"%n)
+
+output:
+enter a number:25
+25 is perfect number.
+
+print prime numbers to a specified limit
+lower=int(input("enter lower limit:"))
+upper=int(input("enter upper limit:"))
+print("prime numbers between",lower,"and",upper,"are:")
+for num in range(lower,upper+1):
+if num>1:
+for i in range(2,num):
+if(num%1 == 0):
+break
+else:
+print(num)
+
+output:
+enter lower limit:0
+enter upper limit:10
+prime numbers between 0 and 10 are:
+2
+3
+5
+7
+
+print twin prime numbers to a specified limit
+def printTwinPrime(n);
+prime = [True for i in range(n+2)]
+p=2
+while(p*p<=n+1):
+if(prime[p]==True):
+for i in range(p*2,n+2,p):
+prime[i]=False
+p+=1
+for p in range(2,n-1):
+if (prime[p] and prime[p+2]):
+print("(",p,",",(p+2),")",end='')
+if_name_=='_main_':
+n=25
+printTwinPrime(n)
+
+output:
+(2,3),(5,7),(11,13),(17,19)
+
+find sum of digits of a number
+n=int(input("enter any number:"))
+sum=0
+while(n>0):
+r=n%10
+sum=sum+r
+n=n/10
+print("\n sum of digits of given number = %d"%sum)
+
+output:
+enter any number:125
+sum of digitsa of given number = 8
+
+check whether given number is armstrong or not
+num=input("enter a number:"))
+res=0
+while(temp>0):
+rem=int(temp%10)
+temp=temp/10
+res=res+(rem*rem*rem)
+if(int(res)==int(num)):
+print("given number"+num+"is a armstrong number.")
+else
+print("given number"+num+"is not a a armstrong number.")
+
+output:
+enter a number:153
+given number is a armstrong number.
+
+Swapping of two numbers
+num1=int(input("enter first number:"))
+num2=int(input("enter second number:"))
+print("started swapping the numbers given....")
+n1= num1
+n2= num2
+swap=n1
+n1=n2
+n2=swap
+print("given numbers are succesfully swapped!")
+print("after swapping:")
+print("first number ="+n1+"\n second number="+n2)
+
+output:
+enter firsat number:34
+enter secoand number:45
+started swapping the numbers given....
+given numbers are succsefully swapped!
+after swapping:
+first number =45
+second number =34
+
+performing all arithmetic operatins
+num1=float(input("enter first number:")
+num2=float(input("enter second number:")
+sum=num1+num2
+sub=num1-num2
+mul=num1*nunm2
+div=num1/num2
+mod=num1%num2
+print("the sum of"+num1+"and"+num2+"is"+sum)
+print("the subraction of"+num1+"and"+num2+"is"+sub)
+print("the multipilcation of"+num1+"and"+num2+"is"+mul)
+print("the division of"+num1+"and"+num2+"is"+div)
+print("the mod of"+num1+"and"+num2+"is"+mod)
+
+output:
+enter first number:30
+enter second number:10
+the sum of 30 and 10 is 40
+the subraction of 30 and 10 is 20
+the multiplication of 30 and 10 is 300
+the division of 30 and 10 is 3
+the mod of 30 and 10 is 3
